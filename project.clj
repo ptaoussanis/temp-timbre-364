@@ -4,8 +4,8 @@
   :url ""
 
   :dependencies 
-  [[thheller/shadow-cljs "2.20.13" :scope "provided"]
-   [com.taoensso/timbre "6.0.3" :exclusions [com.taoensso/encore]]
+  [#_[org.clojure/clojurescript "1.11.60"]
+   [thheller/shadow-cljs "2.20.13" :scope "provided"]
    [com.taoensso/encore "3.42.0"]]
 
   :min-lein-version "2.0.0"

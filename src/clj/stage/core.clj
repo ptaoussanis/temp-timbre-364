@@ -1,8 +1,5 @@
 (ns stage.core
-  (:require
-    [taoensso.timbre :as timbre
-      :refer [info warn error spy get-env]])
+  (:require [taoensso.encore :as enc :refer [have]])
   (:gen-class))
 
-(defn -main [& args]
-  (info "Hello World"))
+(defn -main [& args])
