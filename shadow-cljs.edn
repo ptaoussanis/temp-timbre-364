@@ -1,15 +1,12 @@
-;; shadow-cljs configuration
-{:source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
-
- :dependencies
- [[com.taoensso/encore "3.42.0"]
-  [com.taoensso/timbre  "6.0.3"]]
-
- :dev-http {8080 "public"}
+{:nrepl {:port 7002}
  :builds
- {:frontend
-  {:target :browser
-   :modules {:main {:init-fn foo/init}}}}}
+        {:app
+               {:target     :browser
+                :output-dir "target/cljsbuild/public/js"
+                :asset-path "/js"
+                :source-map true
+                :js-options {:entry-keys ["browser" "main"]}
+                :modules    {:app {:entries [stage.app]}}
+                :devtools   {:watch-dir "resources/public"}
+                :release    {:source-map true}}}
+ :lein  {:profile "+dev-shadow"}}

@@ -1,8 +1,24 @@
 {
-  "name": "test-enc",
-  "version": "0.0.1",
-  "private": true,
   "devDependencies": {
-    "shadow-cljs": "2.20.13"
+    "autoprefixer": "^10.4.13",
+    "postcss-import": "^15.0.1",
+    "shadow-cljs": "^2.20.13"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "^2.4.7",
+    "@gltf-transform/functions": "^2.4.7",
+    "@js-joda/core": "5.4.2",
+    "@js-joda/locale_en-us": "4.8.6",
+    "@js-joda/timezone": "2.15.0",
+    "gltf-validator": "^2.0.0-dev.3.9",
+    "katex": "0.16.3",
+    "markdown-it": "13.0.1",
+    "markdown-it-block-image": "0.0.3",
+    "markdown-it-sidenote": "github:gerwitz/markdown-it-sidenote#aa5de8ce3168b7d41cb33c3aed071a5f41ce0083",
+    "markdown-it-texmath": "1.0.0",
+    "markdown-it-toc-done-right": "4.2.0",
+    "punycode": "2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
