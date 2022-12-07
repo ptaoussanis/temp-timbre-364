@@ -6,7 +6,10 @@
   :dependencies 
   [#_[org.clojure/clojurescript "1.11.60"]
    [thheller/shadow-cljs "2.20.13" :scope "provided"]
-   [com.taoensso/encore "3.42.0"]]
+   #_[com.taoensso/encore "3.37.1"] ; Works
+   #_[com.taoensso/encore "3.42.0"] ; Fails
+     [com.taoensso/encore "3.43.0"] ; Works
+   ]
 
   :min-lein-version "2.0.0"
 
